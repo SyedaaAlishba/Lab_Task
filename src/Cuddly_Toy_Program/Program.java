@@ -38,7 +38,8 @@ public class Program {
 
         Bank_manager bank_manager=new Bank_manager("large");
         bank_manager.describe();
-        bank_manager.authorize_loan(1900.0);
+        bank_manager.setLoan_amount(2000);
+        bank_manager.authorize_loan();
 
 
 
