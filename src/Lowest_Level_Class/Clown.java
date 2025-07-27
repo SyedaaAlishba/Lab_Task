@@ -11,5 +11,8 @@ public class Clown extends Bunny {
         System.out.println(getColour()+" Clown "+"is juggling balls" );
     }
 
-
+    @Override
+    public String getNoise() {
+        return super.getNoise();
+    }
 }

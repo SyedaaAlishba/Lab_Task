@@ -4,12 +4,16 @@ import Base_Class.Cuddly_Toy;
 
 public class Bunny extends Cuddly_Toy {
     public Bunny(String size, String colour){
-        this.size=size;
-        this.colour=colour;
+        super(size,colour,"Bunny");
+
     }
     @Override
     public void makeNoise(){
-        this.noise="\uD83D\uDC30 Bunny says: Squeak!";
+        this.noise="Bunny says: Squeak!";
     }
 
+    @Override
+    public String getNoise() {
+        return super.getNoise();
+    }
 }

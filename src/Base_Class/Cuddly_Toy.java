@@ -1,21 +1,21 @@
 package Base_Class;
 
-public class Cuddly_Toy {
+public abstract class Cuddly_Toy {
    public String size;
    public String job;
    public String colour;
    public String noise;
+   public String toyType;
 
 
-   public  Cuddly_Toy(){
+    public Cuddly_Toy(String size, String colour,String toyType){
+        this.size = size;
+        this.colour = colour;
+        this.toyType=toyType;
+    }
 
-   }
-
-    public void set(String size, String job, String colour, String noise){
-       this.size=size;
-       this.colour=colour;
-       this.job=job;
-       this.noise=noise;
+    public String getToyType() {
+        return toyType;
     }
 
     public String getSize() {
@@ -31,13 +31,13 @@ public class Cuddly_Toy {
        return noise;
     }
     public void describe(){
-        System.out.println("Job "+getJob());
-        System.out.println("Size "+getSize());
-        System.out.println("Colour "+getColour());
+        System.out.println("Toy Type : "+getToyType());
+        System.out.println("Job      : "+getJob());
+        System.out.println("Size     : "+getSize());
+        System.out.println("Colour   : "+getColour());
+
     }
-    public void makeNoise(){
-       this.noise=getNoise();
-    }
+   public abstract void makeNoise();
 
 
 }

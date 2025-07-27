@@ -21,5 +21,10 @@ public class Engine_driver extends Teddy {
         System.out.println("Gear Changed Speed is "+getSpeed());
     }
 
+    @Override
+    public void  describe(){
+        super.describe();
+        System.out.println("Additional Info: Can change gear!");
+    }
 
 }
