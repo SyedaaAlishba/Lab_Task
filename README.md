@@ -10,11 +10,3 @@ Model the classes as described above in a hierarchy, the highest level of which 
 Instantiate objects of these classes dynami-cally via a base class pointer, setting the size of the toy via a parameter to the constructor. Use class attributes as appropriate.<br> 
 Demonstrate a method which wallows the toy to make a noise and tell us about itself.<br>
 
-          
-          Cuddly_Toy
-         /          \
-     Teddy          Bunny
-    /     \         /     \
-Engine  Gardener  Clown  BankManager
-Driver
-
